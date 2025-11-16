@@ -1,0 +1,166 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #67c4d0 0%, #fff 100%);
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header,
+h1,
+h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-top: 1.5em;
+}
+h3 {
+  text-align: center;
+  color: #1976d2;
+  margin-top: 1em;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  text-align: center;
+}
+
+img.logo {
+  display: block;
+  margin: 1em auto;
+  border-radius: 1000%;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+}
+
+
+
+
+
+button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+#team {
+  margin: 3em 0;
+  padding: 0 2em;
+  text-align: center;
+}
+
+#team-title {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #1976d2;
+}
+
+#team ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#team li {
+  background-color: #0496ff;
+  margin: 1em 0;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(25, 118, 210, 0.1);
+  font-weight: bold;
+  color: #3c638a;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+#team li:hover {
+  transform: scale(1.03);
+  background-color: #34a0ff;
+}
+button:hover {
+  background: #0d47a1;
+  transform: scale(1.05);
+}
+
+form,
+label,
+input {
+  text-align: center;
+  color: #1976d2;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+li {
+  background: #bbdefb;
+  border-radius: 8px;
+  padding: 1em 2em;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  transition: transform 0.2s;
+}
+
+li:hover {
+  background: #00a0fc;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+p,
+strong {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.locations {
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 1em 2em;
+  margin: 2em auto;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .locations {
+    padding: 1em;
+    max-width: 95vw;
+  }
+}

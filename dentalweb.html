@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nasr Dental Clinic</title>
+  <link rel="stylesheet" href="blue and white.css" />
+</head>
+<body class="english-mode">
+  <header>
+    
+    <h1 id="clinic-title">Welcome to Nasr Dental Clinic</h1>
+    <nav>
+      <ul>
+        <li><a href="#services" id="nav-services">Services</a></li>
+        <li><a href="#contact" id="nav-emergency">Contact</a></li>
+        <li><a href="#tips" id="nav-tips">Dental Care Tips</a></li>
+        <li><a href="#team" id="team1">Our Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2 id="services-title">Our Services</h2>
+      <ul>
+        <li id="service1">General Dentistry</li>
+        <li id="service2">Cosmetic Dentistry</li>
+        <li id="service3">Orthodontics</li>
+        <li id="service4">Teeth Whitening</li>
+        <li id="service5">Dental Implants</li>
+        <li id="service6">Endodontics</li>
+        <li id="service7">Surgery</li>
+      </ul>
+    </section>
+
+    <section id="tips">
+      <h2 id="tips-title">Dental Care Tips</h2>
+      <ul>
+        <li id="tip1">Brush your teeth at least twice a day with fluoride toothpaste.</li>
+        <li id="tip2">Floss daily to remove plaque from between your teeth.</li>
+        <li id="tip3">Limit sugary snacks and drinks to prevent tooth decay.</li>
+        <li id="tip4">Visit your dentist regularly for check-ups and cleanings.</li>
+      </ul>
+    </section>
+
+    <section id="team">
+  <h2 id="team-title">Our Team</h2>
+
+  <!-- dashed divider line shown as "-----" -->
+  
+
+  <div class="team-scroll">
+    <ol class="team-list">
+      <li id="member1">Dr. Mohamed Nasr – Orthodontist – Dental Clinic Creator – Oral Surgery</li>
+      <li id="member2">Dr. Mazen Nasr – Endodontic Dentist</li>
+      <li id="member3">Dr. Khaled Leal – Cosmetic Dentist</li>
+      <li id="member4">Dr. Mahytab Nasr – General Dentist</li>
+      <li id="member5">Dr. Roba Mostafa – Pediatric Dentist</li>
+      <li id="member6">Dr. May Gamal – Pediatric Dentist</li>
+      <li id="member7">Dr. Shaymaa – Endodontic</li>
+      <li id="member8">Dr. Ahmed – Cosmetic Dentist</li>
+      <li id="member9">Ali – Website Creator – Handler of Gmail</li>
+    </ol>
+  </div>
+
+  <!-- optional second divider below the list -->
+  
+</section>
+   
+
+    <section id="contact">
+      <h2 id="contact-title">Contact us</h2>
+      <p><a id="contact1" href="whatsapp://send?phone=201222365300">Message Us on WhatsApp (Ras El Bar)</a></p>
+      <p><a id="contact2" href="sms:2001011646171">Message Us (Ezbet El Borg)</a></p>
+      <p><a id="contact3" href="tel:2001001999484">Call us (Ezbet El Borg)</a></p>
+      <p><a id="contact4" href="tel:2001001999484">Call us on Phone (Damietta)</a></p>
+      <p><a id="contact5" href="sms:2001001999484">Message us (Damietta)</a></p>
+      <p><a id="contact6" href="https://mail.google.com/mail/?view=cm&fs=1&to=nasrdentalclinic7@gmail.com">Email us</a></p>
+    </section>
+
+    <div class="toggles" role="navigation" aria-label="language toggles">
+      <button onclick="switchToArabic()" id="arabic-toggle">عربي</button>
+      <button onclick="switchToEnglish()" id="english-toggle">English</button>
+    </div>
+  </main>
+
+  <script>
+    // Lightweight JS: uses only DOM methods, safe for low-resource machines
+    function switchToArabic(){
+      document.body.classList.add('arabic-mode');
+      document.body.classList.remove('english-mode');
+      document.documentElement.lang = 'ar';
+
+      document.getElementById('clinic-title').textContent = 'عيادة نصر للأسنان';
+      document.title = 'عيادة نصر للأسنان';
+
+      document.getElementById('nav-services').textContent = 'الخدمات';
+      document.getElementById('nav-emergency').textContent = 'الاتصال الطارئ';
+      document.getElementById('nav-tips').textContent = 'نصائح الأسنان';
+
+      document.getElementById('services-title').textContent = 'خدماتنا';
+      document.getElementById('service1').textContent = 'طب الأسنان العام';
+      document.getElementById('service2').textContent = 'طب الأسنان التجميلي';
+      document.getElementById('service3').textContent = 'تقويم الأسنان';
+      document.getElementById('service4').textContent = 'تبييض الأسنان';
+      document.getElementById('service5').textContent = 'زراعة الأسنان';
+      document.getElementById('service6').textContent = 'علاج الجذور';
+      document.getElementById('service7').textContent = 'جراحة الفم';
+      document.getElementById('team1').textContent = 'فريقنا';
+      document.getElementById('tips-title').textContent = 'نصائح للعناية بالأسنان';
+      document.getElementById('tip1').textContent = 'نظف أسنانك مرتين يوميًا بمعجون يحتوي على الفلورايد.';
+      document.getElementById('tip2').textContent = 'استخدم الخيط يوميًا لإزالة البلاك بين الأسنان.';
+      document.getElementById('tip3').textContent = 'قلل من تناول الحلويات والمشروبات السكرية لتجنب التسوس.';
+      document.getElementById('tip4').textContent = 'قم بزيارة طبيب الأسنان بانتظام للفحص والتنظيف.';
+
+      document.getElementById('contact-title').textContent = 'اتصل بنا';
+      document.getElementById('contact1').textContent = 'راسلنا على واتساب (رأس البر)';
+      document.getElementById('contact2').textContent = 'راسلنا برسالة (عزبة البرج)';
+      document.getElementById('contact3').textContent = 'اتصل بنا (عزبة البرج)';
+      document.getElementById('contact4').textContent = 'اتصل بنا (دمياط)';
+      document.getElementById('contact5').textContent = 'راسلنا برسالة (دمياط)';
+      document.getElementById('contact6').textContent = 'راسلنا عبر البريد الإلكتروني';
+
+      document.getElementById('team-title').textContent = 'فريقنا';
+      document.getElementById('member1').textContent = 'د. محمد نصر - تقويم الأسنان - مؤسس العيادة - جراحة الفم';
+      document.getElementById('member2').textContent = 'د. مازن نصر - علاج الجذور';
+      document.getElementById('member3').textContent = 'د. خالد ليل - تجميل الأسنان';
+      document.getElementById('member4').textContent = 'د. ميهتاب نصر - طب الأسنان العام';
+      document.getElementById('member5').textContent = 'د. رُبى مصطفى - طب أسنان الأطفال';
+      document.getElementById('member6').textContent = 'د. مي جمال - طب أسنان الأطفال';
+      document.getElementById('member7').textContent = 'د. شيماء - علاج الجذور';
+      document.getElementById('member8').textContent = 'د. أحمد - تجميل الأسنان';
+      document.getElementById('member9').textContent = 'علي - منشئ الموقع - مسؤول البريد الإلكتروني';
+
+      // ensure first card (Dr. Mohamed) is visible at start of scroll
+      const first = document.getElementById('member1');
+      if(first && first.scrollIntoView) first.scrollIntoView({behavior:'auto',block:'nearest',inline:'start'});
+    }
+
+    function switchToEnglish(){
+      document.body.classList.remove('arabic-mode');
+      document.body.classList.add('english-mode');
+      document.documentElement.lang = 'en';
+
+      document.getElementById('clinic-title').textContent = 'Nasr Dental Clinic';
+      document.title = 'Nasr Dental Clinic';
+      document.getElementById('team1').textContent = 'Our Team';
+      document.getElementById('nav-services').textContent = 'Services';
+      document.getElementById('nav-emergency').textContent = 'Emergency Contact';
+      document.getElementById('nav-tips').textContent = 'Dental Care Tips';
+
+      document.getElementById('services-title').textContent = 'Our Services';
+      document.getElementById('service1').textContent = 'General Dentistry';
+      document.getElementById('service2').textContent = 'Cosmetic Dentistry';
+      document.getElementById('service3').textContent = 'Orthodontics';
+      document.getElementById('service4').textContent = 'Teeth Whitening';
+      document.getElementById('service5').textContent = 'Dental Implants';
+      document.getElementById('service6').textContent = 'Endodontics';
+      document.getElementById('service7').textContent = 'Surgery';
+
+      document.getElementById('tips-title').textContent = 'Dental Care Tips';
+      document.getElementById('tip1').textContent = 'Brush your teeth at least twice a day with fluoride toothpaste.';
+      document.getElementById('tip2').textContent = 'Floss daily to remove plaque from between your teeth.';
+      document.getElementById('tip3').textContent = 'Limit sugary snacks and drinks to prevent tooth decay.';
+      document.getElementById('tip4').textContent = 'Visit your dentist regularly for check-ups and cleanings.';
+
+      document.getElementById('contact-title').textContent = 'Contact us';
+      document.getElementById('contact1').textContent = 'Message Us on WhatsApp (Ras El Bar)';
+      document.getElementById('contact2').textContent = 'Message Us (Ezbet El Borg)';
+      document.getElementById('contact3').textContent = 'Call us (Ezbet El Borg)';
+      document.getElementById('contact4').textContent = 'Call us on Phone (Damietta)';
+      document.getElementById('contact5').textContent = 'Message us (Damietta)';
+      document.getElementById('contact6').textContent = 'Email us';
+
+      document.getElementById('team-title').textContent = 'Our Team';
+      document.getElementById('member1').textContent = 'Dr. Mohamed Nasr - Orthodontist - Dental Clinic Creator - Oral Surgery';
+      document.getElementById('member2').textContent = 'Dr. Mazen Nasr - Endodontic';
+      document.getElementById('member3').textContent = 'Dr. Khaled Leal - Cosmetic Dentist';
+      document.getElementById('member4').textContent = 'Dr. Mahytab Nasr - General Dentist';
+      document.getElementById('member5').textContent = 'Dr. Roba Mostafa - Pediatric Dentist';
+      document.getElementById('member6').textContent = 'Dr. May Gamal - Pediatric Dentist';
+      document.getElementById('member7').textContent = 'Dr. Shaymaa - Endodontic';
+      document.getElementById('member8').textContent = 'Dr. Ahmed - Cosmetic Dentist';
+      document.getElementById('member9').textContent = 'Ali - Website Creator - Handler of Gmail';
+
+      // ensure first card visible on switch
+      const first = document.getElementById('member1');
+      if(first && first.scrollIntoView) first.scrollIntoView({behavior:'auto',block:'nearest',inline:'start'});
+    }
+
+    // Ensure Dr. Mohamed is visible after initial load
+    window.addEventListener('load', function(){
+      const first = document.getElementById('member1');
+      if(first && first.scrollIntoView) first.scrollIntoView({behavior:'auto',block:'nearest',inline:'start'});
+    });
+  </script>
+</body>
+</html>
